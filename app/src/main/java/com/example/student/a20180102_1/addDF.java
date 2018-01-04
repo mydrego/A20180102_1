@@ -31,7 +31,7 @@ public class addDF extends DialogFragment {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).studentDAOin.add(new Student(Integer.valueOf(ed1.getText().toString()), ed2.getText().toString(), Integer.valueOf(ed3.getText().toString())));
+                ((MainActivity) getActivity()).dao.add(new Student(Integer.valueOf(ed1.getText().toString()), ed2.getText().toString(), Integer.valueOf(ed3.getText().toString())));
                 ((MainActivity) getActivity()).reFlush();
                 dismiss();
             }
